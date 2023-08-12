@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: 'TheoremReach Flutter Example',
       home: MyHomePage(),
     );
@@ -18,7 +18,10 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatelessWidget {
-  const MyHomePage({super.key});
+  MyHomePage({super.key});
+
+  final TheoremReach theoremReach =
+      TheoremReach(userId: 'YouUserId', apiKey: 'YouApiKey');
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +29,12 @@ class MyHomePage extends StatelessWidget {
         appBar: AppBar(
           title: const Text('TheoremReach Flutter Example'),
         ),
-        body: const Surveys(
-            userId: 'hdhgds', apiKey: '60c79ecd2bf59b7f18eb1c9255da'));
+        body: Center(
+          child: ElevatedButton(
+              onPressed: () {
+                theoremReach.showSurveys(context);
+              },
+              child: const Text('Show Surveys')),
+        ));
   }
 }

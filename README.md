@@ -17,8 +17,24 @@ A Flutter package that enables seamless integration of TheoremReach surveys into
 
 To use this package, add `theoremreach_flutter` as a dependency in your `pubspec.yaml` file.
 
+
+## Usage
+After instalalion you can then import the dependecy on your project
+
+```dart
+ import 'package:theoremreach_flutter/theoremreach_flutter.dart';
+```
+init theoremReach plugin
+```dart
+  final TheoremReach theoremReach =
+      TheoremReach(userId: 'YouUserId', apiKey: 'YouApiKey');
+```
+show surveys with the following snipet
+
+```dart
+theoremReach.showSurveys(context);
+```
 ```yaml
 dependencies:
   theoremreach_flutter: ^1.0.1  
-
-
+```
