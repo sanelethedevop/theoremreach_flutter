@@ -1,7 +1,8 @@
 name: theoremreach_flutter
 description: Elevate your Flutter app's user engagement and data-driven decision-making with the Flutter TheoremReach Integration package.
 version: 1.0.1
-homepage:
+homepage: https://perkspilot.xyz
+repository: https://github.com/sanelethedevop/theoremreach_flutter
 
 environment:
   sdk: '>=3.0.6 <4.0.0'
