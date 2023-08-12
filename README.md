@@ -19,6 +19,6 @@ To use this package, add `theoremreach_flutter` as a dependency in your `pubspec
 
 ```yaml
 dependencies:
-  theoremreach_flutter: ^1.0.0  
+  theoremreach_flutter: ^1.0.1  
 
 
