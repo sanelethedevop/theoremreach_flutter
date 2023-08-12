@@ -16,6 +16,10 @@ A Flutter package that enables seamless integration of TheoremReach surveys into
 ## Installation
 
 To use this package, add `theoremreach_flutter` as a dependency in your `pubspec.yaml` file.
+```yaml
+dependencies:
+  theoremreach_flutter: ^1.0.2 
+```
 
 
 ## Usage
@@ -33,8 +37,4 @@ show surveys with the following snipet
 
 ```dart
 theoremReach.showSurveys(context);
-```
-```yaml
-dependencies:
-  theoremreach_flutter: ^1.0.1  
 ```
